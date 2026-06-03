@@ -50,7 +50,7 @@ function Hero() {
 
         {/* FRAMER MOTION WRAPPER: Handles the smooth slide-in on page load */}
         <motion.div
-          className="relative w-full overflow-visible flex justify-end"
+          className="relative w-full overflow-visible flex justify-end -mt-40"
           initial={{ x: 150, opacity: 0 }}
           animate={{ x: -20, opacity: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
