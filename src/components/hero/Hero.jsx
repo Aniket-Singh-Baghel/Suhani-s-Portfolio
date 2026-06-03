@@ -13,6 +13,14 @@ function Hero() {
 
       {/* 2. STABLE BACKGROUND SHAPES (z-0) */}
       <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
+        <div className="absolute -top-10 -left-10 w-[70vw] h-[20vh] sm:w-[28vw] sm:h-[28vh] origin-top-left">
+          <div
+            className="w-full h-full bg-[#C6D9A6] opacity-30 sm:opacity-40"
+            style={{
+              borderRadius: '0% 0% 100% 0% / 0% 0% 100% 0%'
+            }}
+          />
+        </div>
         <div className="absolute -bottom-10 -left-10 w-[70vw] h-[20vh] sm:w-[28vw] sm:h-[28vh] origin-bottom-left">
           <div className="w-full h-full bg-[#9BB082] opacity-30 sm:opacity-40"
             style={{ borderRadius: '0% 100% 0% 0% / 0% 100% 0% 0%' }} />
@@ -75,7 +83,7 @@ function Hero() {
 
       </div>
       {/* 5. BALANCED TEXT POSITIONING (z-30) */}
-      <div className="relative z-30 w-full max-w-[850px] pl-2 sm:pt-0 sm:pl-0 sm:pl-0 pointer-events-none ">
+      <div className="relative z-30 w-full max-w-[850px] pl-2 sm:pl-0 pointer-events-none -translate-y-8 lg:-translate-y-12">
         <div className="pointer-events-auto inline-block">
 
           {/* Subtitle Label */}
