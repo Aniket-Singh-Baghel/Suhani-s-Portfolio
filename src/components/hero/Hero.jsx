@@ -54,7 +54,7 @@ function Hero() {
       /> */}
 
       {/* 4. BIG HERO IMAGE ON THE RIGHT (z-20) */}
-      <div className="absolute top-16 right-0 sm:top-auto sm:right-10 sm:bottom-0 z-0 w-[70vw] sm:w-[60vw] md:w-[50vw] lg:w-[60vw] max-w-[750px] flex justify-end items-start sm:items-end pointer-events-none opacity-40 sm:opacity-100">
+      <div className="absolute top-16 right-0 sm:top-auto sm:right-10 sm:bottom-0 z-99 w-[70vw] sm:w-[60vw] md:w-[50vw] lg:w-[60vw] max-w-[750px] flex justify-end items-start sm:items-end pointer-events-none opacity-40 sm:opacity-100">
 
         {/* FRAMER MOTION WRAPPER: Handles the smooth slide-in on page load */}
         <motion.div
