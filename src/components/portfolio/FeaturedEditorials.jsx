@@ -1,4 +1,4 @@
-import { featuredProjects } from "./portfolioData"; ;
+import {FeaturedProjects} from "./PortfolioData";
 import ProjectCard from "./ProjectCard";
 
 const FeaturedEditorials = () => {
