@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+/* 1. Import your custom font safely */
+
+/* 2. Apply subtle global defaults without forcing strict widths/overflows */
+@layer base {
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FBE8CE; /* Fallback background just in case */
+    color: #2B2B2B;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+}

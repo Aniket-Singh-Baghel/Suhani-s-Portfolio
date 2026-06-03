@@ -1,0 +1,50 @@
+COLOR PALETTES
+
+1. Sage Green #9AB17A  Use for:
+
+buttons
+highlights
+hover effects
+accents
+
+2. Soft Olive #C3CC9B  
+
+cards
+floating shapes
+soft gradients
+
+3. Warm Cream #E4DFB5 
+
+background sections
+glow effects
+subtle overlays
+
+4. Soft Peach Beige #FBE8CE
+
+main background
+elegant soft base tone
+
+Typography Colors
+darker text: #2B2B2B
+Main Heading #2B2B2B
+Secondary Text #5A5A5A
+Accent Buttons #9AB17A
+
+Animation Style:
+Fluid
+Elegant
+Dreamy
+Soft
+Cinematic
+
+Best Visual Additions
+
+These colors work beautifully with:
+Grain Texture
+Soft paper-like texture.
+Watercolor Backgrounds
+Very fashion-editorial feel.
+Fabric Motion
+Floating cloth-like animations.
+Blur Effects
+Soft translucent layers
