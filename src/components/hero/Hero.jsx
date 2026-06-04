@@ -1,9 +1,6 @@
-import React from 'react'
 import { useNavigate } from "react-router-dom";
 import { motion } from 'framer-motion'
-import leafImage from './Leaf.png'
 import designerIcon from './designer-icon.png'
-import modelImage from './model4.png'
 import heroImage from './png.png'
 
 function Hero() {
