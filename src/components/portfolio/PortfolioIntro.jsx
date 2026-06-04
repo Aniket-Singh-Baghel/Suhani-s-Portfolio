@@ -47,13 +47,24 @@ const PortfolioIntro = () => {
       <div
         className={`fixed top-0 right-0 h-full w-64 bg-[#f5e5d4] z-40 transform transition-transform duration-300 ease-in-out md:hidden shadow-2xl ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
-        <div className="flex flex-col h-full pt-32 px-8">
+        <div className="flex flex-col h-full pt-8 px-8">
+          {/* Close Button */}
+          <div className="flex justify-end mb-16">
+            <button
+              className="w-8 h-8 flex flex-col justify-center items-center gap-1.5 focus:outline-none"
+              onClick={() => setIsSidebarOpen(false)}
+            >
+              <span className="block w-6 h-[2px] bg-black rotate-45 translate-y-[8px]"></span>
+              <span className="block w-6 h-[2px] bg-black opacity-0"></span>
+              <span className="block w-6 h-[2px] bg-black -rotate-45 -translate-y-[8px]"></span>
+            </button>
+          </div>
           <ul className="flex flex-col gap-8 text-sm uppercase tracking-[0.2em]">
-            <li className="cursor-pointer" onClick={() => setIsSidebarOpen(false)}>Works</li>
-            <li className="cursor-pointer" onClick={() => setIsSidebarOpen(false)}>Collections</li>
-            <li className="cursor-pointer" onClick={() => setIsSidebarOpen(false)}>About</li>
-            <li className="cursor-pointer" onClick={() => setIsSidebarOpen(false)}>Journal</li>
-            <li className="cursor-pointer" onClick={() => setIsSidebarOpen(false)}>Contact</li>
+            <li className="cursor-pointer hover:opacity-70 transition-opacity">Works</li>
+            <li className="cursor-pointer hover:opacity-70 transition-opacity">Collections</li>
+            <li className="cursor-pointer hover:opacity-70 transition-opacity">About</li>
+            <li className="cursor-pointer hover:opacity-70 transition-opacity">Journal</li>
+            <li className="cursor-pointer hover:opacity-70 transition-opacity">Contact</li>
           </ul>
         </div>
       </div>
@@ -72,13 +83,47 @@ const PortfolioIntro = () => {
             Selected Works
           </p>
 
-          <h1 className="font-serif text-4xl sm:text-5xl lg:text-[58px] xl:text-[60px] leading-[1.15] lg:leading-[1.05] tracking-[-0.03em] max-w-[620px]">
-            A Curated Archive  of
-            <br />
-            Fashion Concepts
-            <br />
-            and Editorial Visions
-          </h1>
+          <motion.h1
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: { opacity: 1 },
+              visible: {
+                opacity: 1,
+                transition: {
+                  staggerChildren: 0.03,
+                },
+              },
+            }}
+            className="font-serif text-4xl sm:text-5xl lg:text-[58px] xl:text-[60px] leading-[1.15] lg:leading-[1.05] tracking-[-0.03em] max-w-[620px]"
+          >
+            {"A Curated Archive of Fashion Concepts and Editorial Visions".split(" ").map((word, wordIndex) => (
+              <span key={wordIndex} className="inline-block whitespace-nowrap mr-[0.25em]">
+                {word.split("").map((char, charIndex) => (
+                  <motion.span
+                    key={charIndex}
+                    variants={{
+                      hidden: { y: 20, opacity: 0 },
+                      visible: {
+                        y: 0,
+                        opacity: 1,
+                        transition: {
+                          type: "spring",
+                          damping: 12,
+                          stiffness: 100,
+                        },
+                      },
+                    }}
+                    className="inline-block"
+                  >
+                    {char}
+                  </motion.span>
+                ))}
+                {wordIndex === 3 || wordIndex === 5 ? <br className="hidden sm:block lg:hidden" /> : null}
+                {/* Add br after "of" and "Concepts" to roughly match the previous layout, but let it wrap naturally mostly */}
+              </span>
+            ))}
+          </motion.h1>
 
           <p className="mt-6 lg:mt-8 max-w-md text-[#5A5A5A] leading-relaxed text-sm lg:text-base">
             Exploring silhouettes, textures,
@@ -98,12 +143,14 @@ const PortfolioIntro = () => {
           transition={{ delay: 0.3, duration: 1 }}
           className="
             relative
-            w-full
+            w-[calc(100%+3rem)]
+            -ml-6
             h-[50vh]
+            lg:w-[55%]
+            lg:ml-0
             lg:absolute
             lg:top-0
             lg:right-0
-            lg:w-[55%]
             lg:h-screen
             overflow-hidden
             mt-4 lg:mt-0
