@@ -10,8 +10,8 @@ const PortfolioIntro = () => {
 
   return (
     <section className="min-h-screen bg-[#f5e5d4] px-6 lg:px-16 overflow-hidden relative">
-      <nav className="relative z-30 flex justify-between items-center py-8">
-        <h2 onClick={() => navigate('/')} className="font-serif tracking-[0.25em] text-xl cursor-pointer z-50 relative">
+      <nav className="relative z-30 flex justify-between items-center py-6">
+        <h2 onClick={() => navigate('/')} className="font-serif tracking-[0.15em] text-base cursor-pointer z-50 relative">
           SUHANI SINGH
         </h2>
 
@@ -77,7 +77,7 @@ const PortfolioIntro = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="max-w-[540px] mb-8 lg:mb-25 relative z-10 w-full"
+          className="max-w-[540px] mb-8 lg:mb-25 relative z-10 w-full mt-5 lg:mt-0"
         >
           <p className="uppercase font-extrabold text-[#728454] tracking-[0.25em] text-xs lg:text-sm mb-4 lg:mb-8">
             Selected Works
@@ -130,8 +130,8 @@ const PortfolioIntro = () => {
             runway narratives, and couture-inspired concepts.
           </p>
           <button className="mt-6 lg:mt-8 font-extrabold text-[#728454] flex items-center gap-4 border-b border-[#9AB17A] pb-2 uppercase tracking-[0.25em] text-[10px] lg:text-xs cursor-pointer w-fit">
-            Explore The Works
-            <span>→</span>
+            Scroll Down to View Works
+            <span>↓</span>
           </button>
         </motion.div>
 
@@ -145,7 +145,7 @@ const PortfolioIntro = () => {
             relative
             w-[calc(100%+3rem)]
             -ml-6
-            h-[50vh]
+            h-[55vh]
             lg:w-[55%]
             lg:ml-0
             lg:absolute
@@ -153,7 +153,7 @@ const PortfolioIntro = () => {
             lg:right-0
             lg:h-screen
             overflow-hidden
-            mt-4 lg:mt-0
+            -mt-10 lg:mt-0
           "
         >
           <img
