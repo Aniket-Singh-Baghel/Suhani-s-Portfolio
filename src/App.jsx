@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Routes, Route } from "react-router-dom";
 import Hero from './components/hero/Hero'
 import PortfolioIntro from './components/portfolio/PortfolioIntro'
