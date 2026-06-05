@@ -3,14 +3,10 @@ import ProjectCard from "./ProjectCard";
 
 const FeaturedEditorials = () => {
   return (
-    <section className="py-16 md:py-32 px-6 lg:px-16 bg-[#f5e5d4]">
+    <section className="py-2 md:py-10 px-2 lg:px-4 bg-[#f5e5d4] -mt-12 md:-mt-10">
 
-      <div className="mb-12 md:mb-20">
-        <p className="uppercase tracking-[0.25em] text-[#5A5A5A] text-xs md:text-sm">
-          Selected Works
-        </p>
-
-        <h2 className="font-serif text-4xl md:text-5xl lg:text-7xl mt-4 max-w-4xl">
+      <div className="mb-8 md:mb-20">
+        <h2 className="font-serif text-2xl md:text-5xl lg:text-7xl mt-4 max-w-4xl">
           Featured Editorials
         </h2>
       </div>

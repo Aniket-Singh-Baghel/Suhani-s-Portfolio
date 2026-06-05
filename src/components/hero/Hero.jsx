@@ -88,7 +88,7 @@ function Hero () {
             src={heroImage}
             alt='Fashion Model Presentation'
             className='
-           relative
+            relative
             z-10
             h-[100%]
             max-w-none
@@ -137,6 +137,7 @@ function Hero () {
             </button>
 
             <button
+            onClick={() => navigate('/contact')}
               className='rounded-full bg-transparent text-[#232323] font-medium tracking-wide transition-all duration-300 hover:bg-[#232323] hover:text-[#FAF6EE] active:scale-95 cursor-pointer px-8 py-3.5 sm:py-4 text-center text-[13px] sm:text-[14px] border border-[#232323]'
               style={{ lineHeight: '1' }}
             >
