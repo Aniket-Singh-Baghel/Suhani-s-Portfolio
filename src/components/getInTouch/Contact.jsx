@@ -7,6 +7,7 @@ import {
 
 import Nav from "../navbar/Nav";
 import dummy from "./dummy.png";
+import portFolio from "./resume.pdf";
 
 const Contact = () => {
   return (
@@ -216,7 +217,7 @@ const Contact = () => {
         <div className="flex justify-center mt-20 mb-24">
 
           <a
-            href="/portfolio.pdf"
+            href={portFolio}
             download
             className="
             flex
