@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
-import FeaturedEditorials from "./FeaturedEditorials";
 import Navbar from "../shared/Navbar";
-import heroImage from './heroImage.png'
+import heroImage from '../../assets/hero.png'
 
-const PortfolioIntro = () => {
+const About = () => {
   return (
     <section className="min-h-screen bg-[#f5e5d4] overflow-hidden relative">
       <Navbar />
@@ -11,17 +10,12 @@ const PortfolioIntro = () => {
       <div className="px-6 lg:px-16 flex flex-col lg:grid lg:grid-cols-[42%_58%] gap-12 lg:items-center min-h-[calc(100vh-120px)] lg:min-h-screen pb-12 lg:pb-0">
 
         {/* Left Content */}
-
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="max-w-[540px] mb-8 lg:mb-25 relative z-10 w-full"
         >
-          <p className="uppercase font-extrabold text-[#728454] tracking-[0.25em] text-xs lg:text-sm mb-4 lg:mb-8">
-            Selected Works
-          </p>
-
           <motion.h1
             initial="hidden"
             animate="visible"
@@ -34,9 +28,9 @@ const PortfolioIntro = () => {
                 },
               },
             }}
-            className="font-serif text-4xl sm:text-5xl lg:text-[58px] xl:text-[60px] leading-[1.15] lg:leading-[1.05] tracking-[-0.03em] max-w-[620px]"
+            className="font-serif text-5xl sm:text-6xl lg:text-[70px] xl:text-[80px] leading-[1.15] lg:leading-[1.05] tracking-[-0.03em] max-w-[620px] lowercase"
           >
-            {"A Curated Archive of Fashion Concepts and Editorial Visions".split(" ").map((word, wordIndex) => (
+            {"hi hi.".split(" ").map((word, wordIndex) => (
               <span key={wordIndex} className="inline-block whitespace-nowrap mr-[0.25em]">
                 {word.split("").map((char, charIndex) => (
                   <motion.span
@@ -58,24 +52,35 @@ const PortfolioIntro = () => {
                     {char}
                   </motion.span>
                 ))}
-                {wordIndex === 3 || wordIndex === 5 ? <br className="hidden sm:block lg:hidden" /> : null}
-                {/* Add br after "of" and "Concepts" to roughly match the previous layout, but let it wrap naturally mostly */}
               </span>
             ))}
           </motion.h1>
 
-          <p className="mt-6 lg:mt-8 max-w-md text-[#5A5A5A] leading-relaxed text-sm lg:text-base">
-            Exploring silhouettes, textures,
-            runway narratives, and couture-inspired concepts.
+          <p className="mt-8 lg:mt-10 text-black leading-[1.8] text-[15px] lg:text-[17px] font-sans font-medium tracking-wide">
+            i am a new york based designer with an affinity for storytelling and the
+            intersection between business and empathy. i am an incoming strategy
+            intern at a design agency! i have previous experience at both boutique
+            branding agencies and established digital consultancies. previously, i
+            graduated from uc san diego studying cognitive science + design interaction.
           </p>
-          <button className="mt-6 lg:mt-8 font-extrabold text-[#728454] flex items-center gap-4 border-b border-[#9AB17A] pb-2 uppercase tracking-[0.25em] text-[10px] lg:text-xs cursor-pointer w-fit">
-            Explore The Works
-            <span>→</span>
-          </button>
+
+          <div className="mt-12 lg:mt-16">
+            <h3 className="font-serif italic text-xl lg:text-2xl mb-6">get in touch</h3>
+            <ul className="space-y-3 font-sans text-[13px] tracking-[0.15em] uppercase font-semibold">
+              <li>
+                <a href="#" className="hover:opacity-60 transition-opacity">email</a>
+              </li>
+              <li>
+                <a href="#" className="hover:opacity-60 transition-opacity">linkedin</a>
+              </li>
+              <li>
+                <a href="#" className="hover:opacity-60 transition-opacity">resume</a>
+              </li>
+            </ul>
+          </div>
         </motion.div>
 
         {/* Right Image */}
-
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -97,7 +102,7 @@ const PortfolioIntro = () => {
         >
           <img
             src={heroImage}
-            alt="Fashion Editorial"
+            alt="About"
             className="
             absolute
             top-0
@@ -106,14 +111,13 @@ const PortfolioIntro = () => {
             w-full
             object-cover
             object-center lg:object-right-top
-    "
+            "
           />
         </motion.div>
 
       </div>
-      <FeaturedEditorials />
     </section>
   );
 };
 
-export default PortfolioIntro;
+export default About;
