@@ -16,9 +16,9 @@ const Nav = () => {
         <ul className="hidden md:flex justify-center gap-12 text-xs uppercase tracking-[0.2em]">
           <li className="cursor-pointer">Works</li>
           <li className="cursor-pointer">Collections</li>
-          <li className="cursor-pointer">About</li>
+          <li onClick={() => navigate('/about')} className="cursor-pointer">About</li>
           <li className="cursor-pointer">Journal</li>
-          <li className="cursor-pointer">Contact</li>
+          <li onClick={() => navigate('/contact')} className="cursor-pointer">Contact</li>
         </ul>
 
         {/* Mobile Hamburger Menu Icon */}
@@ -59,7 +59,7 @@ const Nav = () => {
           <ul className="flex flex-col gap-8 text-sm uppercase tracking-[0.2em]">
             <li className="cursor-pointer hover:opacity-70 transition-opacity">Works</li>
             <li className="cursor-pointer hover:opacity-70 transition-opacity">Collections</li>
-            <li className="cursor-pointer hover:opacity-70 transition-opacity">About</li>
+            <li onClick={() => navigate('/about')} className="cursor-pointer hover:opacity-70 transition-opacity">About</li>
             <li className="cursor-pointer hover:opacity-70 transition-opacity">Journal</li>
             <li onClick={() => navigate('/contact')} className="cursor-pointer hover:opacity-70 transition-opacity">Contact</li>
           </ul>
