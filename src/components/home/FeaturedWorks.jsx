@@ -28,7 +28,7 @@ const FeaturedWorks = () => {
         {/* Heading */}
         <div className="text-center mb-8">
 
-          <h2 className="font-serif text-4xl md:text-5xl text-[#1E1A17] tracking-[0.08em] uppercase">
+          <h2 className="font-serif text-3xl md:text-5xl text-[#1E1A17] tracking-[0.08em] uppercase">
             Featured Works
           </h2>
 
@@ -41,7 +41,7 @@ const FeaturedWorks = () => {
         </div>
 
         {/* Cards */} 
-        <div className="grid md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
 
           {works.map((work, index) => (
             <div
