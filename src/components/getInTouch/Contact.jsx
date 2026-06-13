@@ -39,7 +39,7 @@ const Contact = () => {
         <div className="grid lg:grid-cols-[55%_45%] gap-4 items-center py-4 lg:py-4">
 
           {/* Left Content */}
-          <div className="max-w-[620px]">
+          <div className="max-w-[620px] lg:-mt-4  ">
 
             <p className="uppercase tracking-[0.25em] text-[#94A36F] text-sm font-medium mb-4">
               Get In Touch
@@ -51,7 +51,7 @@ const Contact = () => {
               text-[3rem]
               sm:text-[5rem]
               md:text-[6rem]
-              lg:text-[7rem]
+              lg:text-[6.5rem]
               leading-[0.95]
               tracking-tight
               text-[#232323]
@@ -64,7 +64,7 @@ const Contact = () => {
               Meaningful.
             </h1>
             
-            <div className="w-px h-10 bg-[#B8B08B] my-4"></div>
+            <div className="w-px h-10 bg-[#B8B08B] my-2"></div>
             <p className="max-w-[520px] text-[#232323]/70 text-lg leading-relaxed">
               Open to editorial projects, fashion campaigns,
               creative collaborations and design opportunities.

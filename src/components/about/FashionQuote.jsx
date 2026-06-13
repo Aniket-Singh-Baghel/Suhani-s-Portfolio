@@ -40,11 +40,12 @@ export default function QuoteSection() {
         md:text-3xl
         leading-tight
         md:leading-[1.3]
-        font-extrabold
+        font-bold
         font-serif
         max-w-[220px]
         sm:max-w-[280px]
         md:max-w-none
+        italic
       "
             >
               Fashion is the art of <em>expressing</em> who we are without
@@ -57,7 +58,7 @@ export default function QuoteSection() {
           className="
           absolute
           right-28
-          top-[100%]
+          top-[105%]
           -translate-y-1/2
           z-20
           lg:-mr-10

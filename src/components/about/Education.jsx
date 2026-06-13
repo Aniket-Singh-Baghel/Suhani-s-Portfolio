@@ -44,7 +44,7 @@ const Education = () => {
 
           {/* RIGHT */}
 
-          <div className="relative">
+          <div className="relative pr-2">
 
             <div className="absolute left-0 top-0 bottom-0 w-px bg-[#D8CDB8]" />
 
@@ -57,7 +57,7 @@ const Education = () => {
               </p>
 
               <h3 className="font-serif text-3xl text-[#232323] mb-4">
-                Bachelor of Fashion Design
+                Bachelor of Fashion Design (University of Allahabad, prayagraj)
               </h3>
 
               <p className="text-[#232323]/70 leading-8">

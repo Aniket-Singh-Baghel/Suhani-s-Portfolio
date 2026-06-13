@@ -125,7 +125,7 @@ const AboutHero = () => {
                 h-[420px]
                 sm:h-[520px]
                 md:h-[620px]
-                lg:h-[660px]
+                lg:h-[580px]
                 object-cover
                 object-center
               "
