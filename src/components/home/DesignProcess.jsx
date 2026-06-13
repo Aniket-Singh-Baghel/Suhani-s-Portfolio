@@ -37,12 +37,12 @@ const DesignProcess = () => {
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
         {/* Heading */}
 
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 md:mb-20">
           <p className="uppercase tracking-[4px] text-sm text-[#8B7D6B] mb-4">
             Behind The Work
           </p>
 
-          <h2 className="font-serif text-5xl text-[#1E1A17]">
+          <h2 className="font-serif text-4xl md:text-5xl text-[#1E1A17]">
             The Design Process
           </h2>
 

@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="border-b border-white/10">
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16 py-10">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
-            <div>
+            <div className="text-center lg:text-left">
               <h2 className="font-serif text-3xl md:text-4xl uppercase tracking-[0.04em]">
                 Open To Opportunities
               </h2>
@@ -90,7 +90,7 @@ const Footer = () => {
 
             <a
               href="mailto:suhanisinghbaghel0309@gmail.com"
-              className="block text-white/70 hover:text-white transition mb-5"
+              className="block text-white/70 hover:text-white transition mb-5 break-all"
             >
               suhanisinghbaghel0309@gmail.com
             </a>

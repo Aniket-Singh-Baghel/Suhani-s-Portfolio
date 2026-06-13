@@ -37,7 +37,7 @@ const Hero = () => {
               Fashion Design Graduate
             </p>
 
-            <h1 className="font-serif text-[3.2rem] sm:text-[4.2rem] lg:text-[5rem] leading-[1.05] text-[#1E1A17]">
+            <h1 className="font-serif text-4xl sm:text-[4.2rem] lg:text-[5rem] leading-[1.1] sm:leading-[1.05] text-[#1E1A17] mt-8 lg:mt-0">
               Designing
               <br />
               Stories Through
@@ -62,11 +62,11 @@ const Hero = () => {
               alt="Suhani Fashion Designer"
                className="
     w-full
-    h-[60vh]
+    h-[50vh]
     sm:h-[75vh]
     lg:h-[90vh]
     object-cover
-    object-right
+    object-top lg:object-right
   "
             />
           </div>
