@@ -71,7 +71,7 @@ const AboutPreview = () => {
                   </h4>
 
                   <p className="mt-1 text-[#5E554B]">
-                    Class of 2024
+                    Class of 2026
                   </p>
                 </div>
 
