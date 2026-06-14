@@ -13,19 +13,19 @@ const AboutPreview = () => {
     <section className="bg-[#F7F1E8] border-t border-[#E5DAC8] py-16">
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
 
-        <div className="grid lg:grid-cols-[28%_40%_32%] gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[28%_40%_32%] gap-10 lg:gap-12 items-center">
 
           {/* Portrait */} 
           <div>
             <img
               src={portraitImage}
               alt="Suhani Singh"
-              className="w-full h-[360px] object-cover"
+              className="w-full h-[300px] md:h-[400px] lg:h-[360px] object-cover"
             />
           </div>
 
           {/* Content */}
-          <div className="lg:pr-10">
+          <div className="lg:pr-10 text-center lg:text-left">
 
             <p className="uppercase tracking-[3px] text-xs text-[#8B7D6B] mb-2">
               Hello, I'm Suhani →
@@ -52,9 +52,9 @@ const AboutPreview = () => {
           </div>
 
           {/* Right Features */}
-          <div className="lg:border-l border-[#E5DAC8] lg:pl-6 lg:-ml-6">
+          <div className="lg:border-l border-t lg:border-t-0 border-[#E5DAC8] lg:pl-6 lg:-ml-6 pt-10 lg:pt-0">
 
-            <div className="space-y-8">
+            <div className="space-y-8 max-w-sm mx-auto lg:max-w-none">
 
               {/* Education */}
               <div className="flex items-start gap-4">

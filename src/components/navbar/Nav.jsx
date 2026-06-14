@@ -17,8 +17,7 @@ const Nav = () => {
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex justify-center gap-12 text-xs uppercase tracking-[0.2em]">
-          <li className="cursor-pointer">Works</li>
-          <li className="cursor-pointer">Collections</li>
+          <li onClick={() => navigate("/works")} className="cursor-pointer">Works</li>
           <li onClick={() => navigate("/about")} className="cursor-pointer">
             About
           </li>
@@ -70,11 +69,10 @@ const Nav = () => {
             </button>
           </div>
           <ul className="flex flex-col gap-8 text-sm uppercase tracking-[0.2em]">
-            <li className="cursor-pointer hover:opacity-70 transition-opacity">
+            <li 
+              onClick={() => navigate("/works")}
+              className="cursor-pointer hover:opacity-70 transition-opacity">
               Works
-            </li>
-            <li className="cursor-pointer hover:opacity-70 transition-opacity">
-              Collections
             </li>
             <li
               onClick={() => navigate("/about")}

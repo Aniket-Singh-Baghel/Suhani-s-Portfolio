@@ -24,8 +24,8 @@ const JournalPreview = () => {
     <section className="bg-white py-14 border-t border-[#E5DAC8]">
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
         {/* Heading */}
-        <div className="text-center mb-16">
-          <h2 className="font-serif text-5xl text-[#1E1A17] uppercase tracking-[0.08em]">
+        <div className="text-center mb-10 md:mb-16">
+          <h2 className="font-serif text-3xl md:text-5xl text-[#1E1A17] uppercase tracking-[0.08em]">
             From The Journal
           </h2>
 
@@ -35,19 +35,19 @@ const JournalPreview = () => {
         </div>
 
         {/* Articles */}
-        <div className="grid lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {journalPosts.map((post, index) => (
-            <article key={index} className="flex items-start gap-5">
+            <article key={index} className="flex flex-col sm:flex-row items-start gap-5">
               {/* Image */}
               <img
                 src={post.image}
                 alt={post.title}
-                className="w-[170px] h-[170px] object-cover flex-shrink-0"
+                className="w-full sm:w-[170px] h-[220px] sm:h-[170px] object-cover flex-shrink-0"
               />
 
               {/* Content */}
               <div>
-                <h3 className="font-serif text-2xl text-[#1E1A17] leading-tight">
+                <h3 className="font-serif text-xl sm:text-2xl text-[#1E1A17] leading-tight mt-2 sm:mt-0">
                   {post.title}
                 </h3>
 

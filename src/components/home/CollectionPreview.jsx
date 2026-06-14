@@ -21,7 +21,7 @@ const CollectionPreview = () => {
               Collection Preview
             </p>
 
-            <h2 className="font-serif text-5xl text-[#1E1A17] leading-tight">
+            <h2 className="font-serif text-4xl md:text-5xl text-[#1E1A17] leading-tight">
               Threads of
               <br />
               Heritage
@@ -33,7 +33,7 @@ const CollectionPreview = () => {
               through a contemporary lens.
             </p>
 
-            <button className="mt-10 mt-10 text-[#498006] font-bold cursor-pointer uppercase tracking-[3px] text-sm border-b border-[#1E1A17] pb-2 hover:opacity-70 transition">
+            <button className="mt-10 text-[#498006] font-bold cursor-pointer uppercase tracking-[3px] text-sm border-b border-[#1E1A17] pb-2 hover:opacity-70 transition">
               View Collection →
             </button>
 
@@ -51,7 +51,7 @@ const CollectionPreview = () => {
                 <img
                   src={image}
                   alt={`Look ${index + 1}`}
-                  className="w-full h-[350px] object-cover hover:scale-105 transition duration-700"
+                  className="w-full h-[250px] md:h-[350px] object-cover hover:scale-105 transition duration-700"
                 />
               </div>
             ))}
