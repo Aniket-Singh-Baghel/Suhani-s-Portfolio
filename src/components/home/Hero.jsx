@@ -3,7 +3,7 @@ import Nav from "../navbar/Nav";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen bg-[#F7F1E8] overflow-x-hidden">
+    <section className="relative lg:min-h-screen bg-[#F7F1E8] overflow-x-hidden">
       {/* Decorative Shape */}
       <div
         className="
@@ -30,7 +30,7 @@ const Hero = () => {
 
       {/* Hero Content */}
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-10 lg:pl-10 lg:pr-0">
-        <div className="grid lg:grid-cols-2 items-center min-h-[calc(100vh-90px)] gap-10 lg:gap-12">
+        <div className="grid lg:grid-cols-2 items-center lg:min-h-[calc(100vh-90px)] gap-10 lg:gap-12 py-16 lg:py-0">
           {/* Left Content */}
           <div>
             <p className="uppercase tracking-[4px] text-xs sm:text-sm text-[#8B7D6B] mb-5">
@@ -56,7 +56,7 @@ const Hero = () => {
           </div>
 
           {/* Right Image */}
-          <div>
+          <div className="hidden lg:block">
             <img
               src={heroImage}
               alt="Suhani Fashion Designer"
