@@ -59,7 +59,7 @@ const WorksHero = () => {
       />
 
       {/* Navbar */}
-      <div className="relative z-20 px-6 md:px-10 lg:px-16">
+      <div className="relative z-50 px-6 md:px-10 lg:px-16">
         <Nav />
       </div>
 
