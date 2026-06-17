@@ -7,7 +7,9 @@ const PortfolioIntro = () => {
  
   return (
     <section className="min-h-screen bg-[#f5e5d4] px-6 lg:px-16 overflow-hidden relative">
-      <Nav />
+      <div className="relative z-50">
+        <Nav />
+      </div>
       <div className="flex flex-col lg:grid lg:grid-cols-[42%_58%] gap-12 lg:items-center min-h-[calc(100vh-120px)] lg:min-h-screen pb-12 lg:pb-0">
 
         {/* Left Content */}

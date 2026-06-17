@@ -33,7 +33,9 @@ const Contact = () => {
       {/* Main Content */}
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-12 lg:px-20">
 
-        <Nav />
+        <div className="relative z-50">
+          <Nav />
+        </div>
 
         {/* Hero Section */}
         <div className="grid lg:grid-cols-[55%_45%] gap-4 items-center py-4 lg:py-4">

@@ -8,7 +8,9 @@ const AboutHero = () => {
       <div className="absolute top-0 left-0 w-[180px] h-[180px] lg:w-[260px] lg:h-[260px] bg-[#C6D9A6] opacity-20 rounded-br-full z-0" />
 
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
-        <Nav />
+        <div className="relative z-50">
+          <Nav />
+        </div>
 
         <div className="flex flex-col lg:grid lg:grid-cols-[48%_52%] items-center min-h-[85vh] gap-20">
           {/* LEFT CONTENT */}
