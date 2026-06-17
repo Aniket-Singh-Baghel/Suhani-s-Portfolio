@@ -197,7 +197,7 @@ const WorksHero = () => {
                 lg:mt-0
               "
               >
-                Scroll Down for the Skills ↓
+                Scroll Down for the collectons ↓
               </p>
 
             </div>
