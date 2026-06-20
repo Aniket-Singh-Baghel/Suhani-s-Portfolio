@@ -5,6 +5,13 @@ import workImage03 from './workImage03.png';
 
 
 const works = [
+   {
+    title: "Midnight Opulence",
+    category: "Luxury Evening Wear Design",
+    description:"An exquisite red-and-black evening gown crafted with a structured corset silhouette, crystal embellishments, voluminous architectural accents, and a statement wide-brim hat. Designed to embody timeless glamour, the piece balances dramatic couture elements with refined sophistication.",
+      
+    image: workImage03,
+  },
   {
     title: "Celestial Tide",
     category: "Avant-Garde Couture Collection",
@@ -12,18 +19,11 @@ const works = [
       "A dramatic ocean-inspired couture ensemble featuring deep sapphire and violet tones, sculptural draping, cascading ruffles, and intricate circular embellishments reminiscent of bioluminescent marine life. The collection merges fantasy aesthetics with high-fashion tailoring, creating a bold statement of movement and elegance.",
     image: workImage01,
   },
-   {
+  {
     title: "Lavender Reverie",
     category: "Contemporary Ethnic Couture",
     description:
       "A modern interpretation of traditional Indian occasion wear featuring a one-shoulder draped blouse, flowing lehenga silhouette, delicate sequined embroidery, and ethereal lavender tones. The design celebrates graceful femininity while blending contemporary styling with heritage-inspired craftsmanship.",
-    image: workImage03,
-  },
-  {
-    title: "Midnight Opulence",
-    category: "Luxury Evening Wear Design",
-    description:
-      "An exquisite red-and-black evening gown crafted with a structured corset silhouette, crystal embellishments, voluminous architectural accents, and a statement wide-brim hat. Designed to embody timeless glamour, the piece balances dramatic couture elements with refined sophistication.",
     image: workImage02,
   },
  
