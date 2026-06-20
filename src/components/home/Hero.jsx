@@ -1,9 +1,11 @@
 import heroImage from "./hero-model.png";
 import Nav from "../navbar/Nav";
+import {useNavigate} from 'react-router-dom'
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
-    <section className="relative min-h-screen bg-[#F7F1E8] overflow-x-hidden">
+    <section className="relative lg:min-h-screen bg-[#F7F1E8] overflow-x-hidden">
       {/* Decorative Shape */}
       <div
         className="
@@ -30,7 +32,7 @@ const Hero = () => {
 
       {/* Hero Content */}
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-10 lg:pl-10 lg:pr-0">
-        <div className="grid lg:grid-cols-2 items-center min-h-[calc(100vh-90px)] gap-10 lg:gap-12">
+        <div className="grid lg:grid-cols-2 items-center lg:min-h-[calc(100vh-90px)] gap-10 lg:gap-12 py-16 lg:py-0">
           {/* Left Content */}
           <div>
             <p className="uppercase tracking-[4px] text-xs sm:text-sm text-[#8B7D6B] mb-5">
@@ -50,13 +52,15 @@ const Hero = () => {
               through thoughtful design and creative experimentation.
             </p>
 
-            <button className="mt-8 sm:mt-10 px-8 py-4 font-bold bg-[#9bb082] text-white tracking-wider uppercase text-sm hover:opacity-90 transition cursor-pointer">
+            <button 
+            onClick={() => navigate('/works')}
+            className="mt-8 sm:mt-10 px-8 py-4 font-bold bg-[#9bb082] text-white tracking-wider uppercase text-sm hover:opacity-90 transition cursor-pointer">
               Explore My Work
             </button>
           </div>
 
           {/* Right Image */}
-          <div>
+          <div className="hidden lg:block">
             <img
               src={heroImage}
               alt="Suhani Fashion Designer"
@@ -66,7 +70,7 @@ const Hero = () => {
     sm:h-[75vh]
     lg:h-[90vh]
     object-cover
-    object-top lg:object-right
+    lg:object-right
   "
             />
           </div>

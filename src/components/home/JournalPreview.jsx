@@ -1,21 +1,22 @@
+import journalImg01 from './journal01.png';
+import journalImg02 from './journal02.png';
+import journalImg03 from './journal03.png'
+
 const journalPosts = [
   {
     category: "Design Journey",
-    title: "Finding My Creative Voice Through Fashion",
-    image:
-      "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=1200&q=80",
+    title: "An exploration of structure, texture, and natural inspiration.",
+    image: journalImg01,
   },
   {
     category: "Inspiration",
     title: "How Traditional Textiles Influence My Work",
-    image:
-      "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=1200&q=80",
+    image: journalImg02,
   },
   {
     category: "Process",
     title: "From Sketchbook To Final Garment",
-    image:
-      "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=1200&q=80",
+    image: journalImg03,
   },
 ];
 

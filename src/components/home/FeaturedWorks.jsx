@@ -1,28 +1,39 @@
+import { useNavigate } from 'react-router-dom';
+import workImage01 from './workImage01.jpg' ;
+import workImage02 from './workImage02.png';
+import workImage03 from './workImage03.png';
+
+
 const works = [
   {
-    title: "Draped Essence",
-    category: "Draping Project",
-    image:
-      "https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=1200&q=80",
+    title: "Celestial Tide",
+    category: "Avant-Garde Couture Collection",
+    description:
+      "A dramatic ocean-inspired couture ensemble featuring deep sapphire and violet tones, sculptural draping, cascading ruffles, and intricate circular embellishments reminiscent of bioluminescent marine life. The collection merges fantasy aesthetics with high-fashion tailoring, creating a bold statement of movement and elegance.",
+    image: workImage01,
+  },
+   {
+    title: "Lavender Reverie",
+    category: "Contemporary Ethnic Couture",
+    description:
+      "A modern interpretation of traditional Indian occasion wear featuring a one-shoulder draped blouse, flowing lehenga silhouette, delicate sequined embroidery, and ethereal lavender tones. The design celebrates graceful femininity while blending contemporary styling with heritage-inspired craftsmanship.",
+    image: workImage03,
   },
   {
-    title: "Rooted In Nature",
-    category: "Sustainable Fashion Project",
-    image:
-      "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1200&q=80",
+    title: "Midnight Opulence",
+    category: "Luxury Evening Wear Design",
+    description:
+      "An exquisite red-and-black evening gown crafted with a structured corset silhouette, crystal embellishments, voluminous architectural accents, and a statement wide-brim hat. Designed to embody timeless glamour, the piece balances dramatic couture elements with refined sophistication.",
+    image: workImage02,
   },
-  {
-    title: "Modern Heirloom",
-    category: "Contemporary Ethnic Wear",
-    image:
-      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1200&q=80",
-  },
+ 
 ];
 
 
 const FeaturedWorks = () => {
+  const navigate = useNavigate()
   return (
-    <section className="bg-white py-14">
+    <section className="bg-white py-7">
       <div className="max-w-[1400px] mx-auto px-3 md:px-5 lg:px-8">
 
         {/* Heading */}
@@ -41,7 +52,9 @@ const FeaturedWorks = () => {
         </div>
 
         {/* Cards */} 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div 
+        onClick={()=>navigate('/works')}
+        className="grid grid-cols-1 md:grid-cols-3 gap-5 cursor-pointer">
 
           {works.map((work, index) => (
             <div
@@ -54,7 +67,7 @@ const FeaturedWorks = () => {
                 <img
                   src={work.image}
                   alt={work.title}
-                  className="w-full h-[300px] object-cover transition duration-700 group-hover:scale-105"
+                  className="w-full h-[350px] object-cover transition duration-700 group-hover:scale-105"
                 />
               </div>
 
@@ -83,13 +96,13 @@ const FeaturedWorks = () => {
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-7 ">
+        {/* <div className="text-center mt-7 ">
 
           <button className="uppercase font-serif tracking-[0.2em] text-sm text-[#498006] font-bold cursor-pointer hover:opacity-70 transition">
             View All Works →
           </button>
 
-        </div>
+        </div> */}
 
       </div>
     </section>

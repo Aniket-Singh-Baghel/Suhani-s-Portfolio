@@ -1,33 +1,34 @@
+import insImage from './insp.png'
+import mdBoard from './mdBoard.png'
+import sketches from './sketches.png'
+import fabric from './fabric.png'
+import pattern from './pattern.png'
+import finalLook from './final-look.png'
 const processSteps = [
   {
     title: "Inspiration",
-    image:
-      "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=1200&q=80",
+    image:insImage,
   },
   {
     title: "Moodboard",
-    image:
-      "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=1200&q=80",
+    image: mdBoard,
   },
   {
     title: "Sketches",
-    image:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200&q=80",
+    image: sketches,
   },
   {
     title: "Fabric",
-    image:
-      "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=1200&q=80",
+    image: fabric,
   },
   {
     title: "Pattern",
-    image:
-      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=1200&q=80",
+    image:pattern,
   },
   {
     title: "Final Look",
     image:
-      "https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=1200&q=80",
+      finalLook,
   },
 ];
 
@@ -54,20 +55,20 @@ const DesignProcess = () => {
 
         {/* Timeline */}
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 lg:-mt-6 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 lg:-mt-8 -mt-4 gap-5">
           {processSteps.map((step, index) => (
             <div key={index}>
-              <p className="uppercase text-center tracking-[2px] text-xs text-[#8B7D6B] mb-3">
+              <p className="uppercase text-center tracking-[2px] text-xs text-[#8B7D6B] mb-4">
                 {step.title}
               </p>
-
               <div className="overflow-hidden border border-[#E5DAC8]">
                 <img
                   src={step.image}
                   alt={step.title}
-                  className="w-full h-[180px] object-cover hover:scale-105 transition duration-700"
+                  className="w-full h-[220px] object-cover hover:scale-105 transition duration-700"
                 />
               </div>
+              
             </div>
           ))}
         </div>
