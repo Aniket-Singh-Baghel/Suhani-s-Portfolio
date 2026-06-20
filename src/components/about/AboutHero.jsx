@@ -46,14 +46,12 @@ const AboutHero = () => {
               Designing garments <br /> that exist between
               <br />
               <span className="italic text-[#9BB082]">
-                art, emotion and
-                identity.
+                art, emotion and identity.
               </span>
             </h1>
 
             {/* INTRO */}
             <div className="mt-10 flex gap-6">
-
               <div className="w-px bg-[#D8CDB8] shrink-0" />
 
               <p
@@ -65,14 +63,18 @@ const AboutHero = () => {
                 leading-8
               "
               >
-                I am Suhani Singh, a fashion designer and visual storyteller exploring the intersection of craftsmanship, culture and contemporary fashion. My work draws inspiration from textiles, human emotions and the narratives woven into everyday experiences. Through design, research and creative exploration, I aim to create meaningful fashion stories that connect aesthetics with purpose.
+                I am Suhani Singh, a fashion designer and visual storyteller
+                exploring the intersection of craftsmanship, culture and
+                contemporary fashion. My work draws inspiration from textiles,
+                human emotions and the narratives woven into everyday
+                experiences. Through design, research and creative exploration,
+                I aim to create meaningful fashion stories that connect
+                aesthetics with purpose.
               </p>
-
             </div>
 
             {/* SIGNATURE */}
             <div className="flex items-center gap-6 mt-2 lg:mt-6">
-
               <div
                 className="
                 w-12
@@ -102,7 +104,6 @@ const AboutHero = () => {
               >
                 Scroll Down for the Skills ↓
               </p>
-
             </div>
           </div>
 

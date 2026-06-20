@@ -26,9 +26,10 @@ const Hero = () => {
       />
 
       {/* Navbar */}
-      <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-10 lg:px-10">
-        <Nav />
-      </div>
+      <div className="relative z-50 px-10">
+          <Nav />
+        </div>
+
 
       {/* Hero Content */}
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-10 lg:pl-10 lg:pr-0">
